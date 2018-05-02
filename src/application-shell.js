@@ -22,6 +22,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   import "@polymer/app-layout/app-header/app-header.js";
   import "@polymer/app-layout/app-toolbar/app-toolbar.js";
   import '@polymer/iron-pages/iron-pages.js';
+  import '@polymer/app-layout/app-scroll-effects/app-scroll-effects.js';
   //import "@polymer/paper-card/paper-card.js";
   //import "@polymer/iron-selector/iron-selector.js";
 
@@ -102,7 +103,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       
       app-toolbar   { background-color: #303030; }
-      app-header    { background-color: pink; width: 100%;}
+      app-header    {
+        background-color: pink; width: 100%;
+        /*
+
+          --app-header-background-front-layer: {
+            background-image: url(/images/marks.JPG);
+          };
+
+        */
+      }
       
       paper-card {
         background-color: white;
@@ -198,6 +208,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         condenses
         shadow>
 
+        <!-- style="height: 100%;" effects="parallax-background" -->
+
         <!-- APP-TOOLBAR -->
         <app-toolbar>
 
@@ -207,20 +219,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             main-title>
             Mark Carrot Photography</h2>
 
-          <!-- DIVIDER -->
+          <!-- DIVIDER
           <span class="flex" style="flex:1;"></span>
           
-          <!-- DRAWER TOGGLE -->
+          <!-- DRAWER TOGGLE 
           <paper-icon-button
             drawer-toggle
             class="colored"
             role="button"
             icon="icons:menu"></paper-icon-button>
 
-          <!-- PAPER-PROGRESS -->
+          <!-- PAPER-PROGRESS 
           <paper-progress
             bottom-item>
           </paper-progress>
+          -->
+
         </app-toolbar>
       </app-header>
 

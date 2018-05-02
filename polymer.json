@@ -9,12 +9,14 @@
   ],
 
   "sources": [
-    "src/**/*",
-    "images/**/*"
+    "src/*",
+    "images/*"
   ],
 
   "extraDependencies": [
     "manifest.json",
+    "robots.txt",
+    "sitemap.xml",
     "node_modules/@webcomponents/webcomponentsjs/*.js"
   ],
 
