@@ -1,0 +1,27 @@
+{
+  "name": "markcarrot",
+  "authors": [
+    "Modern Projects",
+    "Mark-Carrot"
+  ],
+  "private": true,
+  "license": "https://polymer.github.io/LICENSE.txt",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0-pre.12",
+    "@polymer/app-layout": "^3.0.0-pre.12",
+    "@polymer/app-route": "^3.0.0-pre.12",
+    "@polymer/iron-scroll-target-behavior": "^3.0.0-pre.12",
+    "@polymer/iron-media-query": "^3.0.0-pre.12",
+    "@polymer/paper-card": "^3.0.0-pre.12",
+    "@polymer/paper-progress": "^3.0.0-pre.12",
+    "@polymer/paper-button": "^3.0.0-pre.12",
+    "@polymer/iron-pages": "^3.0.0-pre.12",
+    "@polymer/iron-selector": "^3.0.0-pre.12",
+    "@polymer/iron-image": "^3.0.0-pre.12",
+    "@polymer/paper-icon-button": "^3.0.0-pre.12"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^1.2.0",
+    "wct-browser-legacy": "^0.0.1-pre.12"
+  }
+}

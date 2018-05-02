@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "markcarrot",
+  "description": "Photography",
+  "homepage": "http://www.markcarrot.com",
+  "author": "Modern Projects",
+  "theme_color": "#9C27B0",
+  "background_color": "#2a3f54",
+  "@context": "http://schema.org/",
+  "@type": "",
+  "keywords": [],
+  "scope": ".",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any"
+
+}

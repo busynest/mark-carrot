@@ -1,0 +1,39 @@
+{
+
+  "entrypoint": "index.html",
+  "shell": "src/application-shell.js",
+  "npm": true,
+  "moduleResolution": "node",
+  "fragments": [
+    "src/markcarrot-photography.js"
+  ],
+
+  "sources": [
+    "src/**/*",
+    "images/**/*"
+  ],
+
+  "extraDependencies": [
+    "manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/*.js"
+  ],
+
+  "lint": {
+    "rules": ["polymer-3"]
+  },
+
+  "builds": 
+  [
+  {
+    "name":                   "esm-bundled",
+    "browserCapabilities":    [ "es2015", "modules" ],
+    "js":                     { "minify": true },
+    "css":                    { "minify": true },
+    "html":                   { "minify": true },
+    "bundle":                 { "inlineScripts": false },
+    "addServiceWorker":       true
+  }
+  
+]
+
+}
