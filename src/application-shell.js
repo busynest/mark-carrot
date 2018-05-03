@@ -16,6 +16,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     import "@polymer/app-route/app-location.js";
     import "@polymer/app-route/app-route.js";
 
+    //  import { connect }                  from 'pwa-helpers/connect-mixin.js';
+    //  import { installRouter }            from 'pwa-helpers/router.js';
+    //  import { installOfflineWatcher }    from 'pwa-helpers/network.js';
+    //  import { updateMetadata }           from 'pwa-helpers/metadata.js';
 
       // APP-LAYOUT ELEMENTS
   import "@polymer/app-layout/app-header-layout/app-header-layout.js";
@@ -133,7 +137,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         font-size: .9em;
       }
       .appTitle, .appDescription {
-        margin: 0px;
+        color:    orange;
+        margin:   0px;
       }
 
       iron-pages {
@@ -158,7 +163,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       /* 520px to 699px Screen*/
       @media only screen and (min-width: 640px) {
-        .appTitle, .appDescription { font-size: 90%; }
+        .appTitle, .appDescription {  }
+        
       }
 
       /* 768px Screen */
@@ -217,7 +223,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <h2
             class="appTitle information"
             main-title>
-            Mark Carrot Photography</h2>
+            Mark Carrot Photography: Exhibition Announcement</h2>
 
           <!-- DIVIDER
           <span class="flex" style="flex:1;"></span>
@@ -260,6 +266,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         -->
 
       </main>
+
+      <div style="height: 100px; background-color: #303030; color: white;"><h3 style="margin: auto; text-align: center;">© Mark Carrot</h3></div>
+
     </app-header-layout>
     
         `;

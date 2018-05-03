@@ -1,14 +1,21 @@
 {
   "name": "markcarrot",
+  "flat": true,
+  "private": true,
+  "license": "BSD-3-Clause",
+  "repository": "busynest/mark-carrot",
   "authors": [
     "Modern Projects",
     "Mark-Carrot"
   ],
-  "private": true,
-  "license": "https://polymer.github.io/LICENSE.txt",
   "dependencies": {
     "@polymer/polymer": "^3.0.0-pre.12",
-    "@polymer/app-layout": "^3.0.0-pre.12",
+    "@webcomponents/webcomponentsjs": "^2.0.0-beta.2",
+    "pwa-helpers": "polymerlabs/pwa-helpers",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+
+    "@polymer/app-layout": "^3.0.0-pre.15",
     "@polymer/app-route": "^3.0.0-pre.12",
     "@polymer/iron-scroll-target-behavior": "^3.0.0-pre.12",
     "@polymer/iron-media-query": "^3.0.0-pre.12",
@@ -21,7 +28,6 @@
     "@polymer/paper-icon-button": "^3.0.0-pre.12"
   },
   "devDependencies": {
-    "@webcomponents/webcomponentsjs": "^1.2.0",
     "wct-browser-legacy": "^0.0.1-pre.12"
   }
 }

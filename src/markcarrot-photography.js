@@ -29,24 +29,69 @@ class MarkcarrotPhotography extends PolymerElement {
     return html`
       <style>
 
-        .wrap {
-          display:                -webkit-flex; /* Safari */
-          -webkit-align-items:    center; /* Safari 7.0+ */
-          display:                flex;
-          align-items:            center;
-          margin:                 0px 20px;
+      @media only screen and (min-width: 500px) {
+        img         { margin-right: 20px; }  
+        .wrapImage  { float: left; }
+        .wrapVideo  { margin-top: 4em; }
+        h3          { margin-left: 1em; }
+      }
+
+      @media only screen and (max-width: 500px) {
+        img { margin: auto; }
+        h3  { text-align: center; }
+        p   { margin: 18px; }
+      }
+
+      @media only screen and (max-width: 500px) {
+        iframe { 
+          width :         256px;
+          height:         144px;
+        }
+      }
+
+      @media only screen and (min-width: 500px) {
+        iframe { 
+          width :         426px;
+          height:         240px;
+        }
+      }
+
+      @media only screen and (min-width: 650px) {
+        iframe { 
+          width :         640px;
+          height:         360px;
+        }
+      }
+
+        .page {
+          max-width:      650px;
+          margin:         auto;
         }
 
         img {
           height:         100%;
           width :         100%;
-          margin:         auto;
-          max-width:      400px;
-          max-height:     600px;
+          max-width:      266px;
+          max-height:     400px;
+        }
+
+        .wrapImage {
+          display:                -webkit-flex; /* Safari */
+          -webkit-align-items:    center; /* Safari 7.0+ */
+          display:                flex;
+          align-items:            center;
         }
 
         iframe {
           margin:         auto;
+          margin-bottom:  1em;
+        }
+
+        .wrapVideo {
+          display:                -webkit-flex; /* Safari */
+          -webkit-align-items:    center; /* Safari 7.0+ */
+          display:                flex;
+          align-items:            center;
         }
 
         h2 {
@@ -55,64 +100,73 @@ class MarkcarrotPhotography extends PolymerElement {
         }
 
         h3 {
-          text-align:     center;
+          margin-bottom: 2em;
         }
 
-        .card {
-          background-color:     #e8e8e8;
-          margin:               12px;
-          border-radius:        5px;
-          padding:              16px;
-          line-height:          1.4;
-          color:                black;
-          text-align:           justify;
-        }
-
-        p::first-letter {
-          color:          red;
-          font-weight:    900;
-          font-size:      2em;
-        }
-
-        .regular {
+        p {
           line-height:    1.4;
-          margin:         20px;
-          text-align:     justify;
+          font-size:      1.1em;
+          font-weight:    600;
+  
         }
 
         a {
-          color:          white;
+          color:          #303030;
         }
+
 
       </style>
       
-      <div class="card">
-        <h2>Exhibition Announcement</h2>
+      <div class="page">
+
+
+
+<!-- PARAGRAPH 1 -->
+        
         <p>
           Gdzie? W Galerii “Po prawej Stronie Wisły”, Warszawa, ul. Konopacka 15/1A
-          Kiedy? 19 — 31 V, 2018
-          Co? Wystawa fotografii, serigrafii i projekcja filmu
-          Rzeczywistość, fotograficzny zapis fragmentów
         </p>
-      </div>
 
-      <div class="wrap">
-        <img src="images/marks.JPG" alt="Mark Carrot Photography">
-      </div>
+        <p>
+          Kiedy? 19 — 31 V, 2018
+        </p>
 
-      <h3><a href="http://www.poprawejstroniewisly.pl/">Noc Muzeów 19 maja 2018 r. w Galerii Sztuki Po Prawej Stronie</a></h3>
-
-      <p class="regular">
-        Na początku było światło i później pojawiła się nasza świadomość..
-        Czy należy rozważać granicę pomiędzy fotografią dokumentarną a fotografiami-symbolami naszej wewnętrznej rzeczywistości? 
-        Na twarzach - skomplikowane życiorysy, wewnątrz w sercach namiętności przeróżne, pod czaszkami zaś wszelakie wizje rzeczywistości. Jak to wszystko zawrzeć w obrazie fotograficznym?
-      </p>
+        <p>
+          Co? Wystawa fotografii, serigrafii i projekcja filmu “Rzeczywistość, fotograficzny zapis fragmentów”
+        </p>
 
 
-      <div class="wrap">
-        <iframe frameborder="0" allowfullscreen
-          src="https://www.youtube.com/embed/3duD2xFW5N4">
-        </iframe>
+    
+        <div class="wrapImage">
+          <img src="images/marks.JPG" alt="Mark Carrot Photography">
+        </div>
+
+        <h3><a href="http://www.poprawejstroniewisly.pl/">Noc Muzeów 19 maja 2018 r. w Galerii Sztuki Po Prawej Stronie Wisły</a></h3>
+
+
+
+<!-- PARAGRAPH 2 -->
+
+        <p>
+          Na początku było światło i później pojawiła się nasza świadomość..
+        </p>
+
+        <p>
+          Czy należy rozważać granicę pomiędzy fotografią dokumentarną a fotografiami-symbolami naszej wewnętrznej rzeczywistości? 
+        </p>
+
+        <p> 
+          Na twarzach - skomplikowane życiorysy, wewnątrz w sercach namiętności przeróżne, pod czaszkami zaś wszelakie wizje rzeczywistości. Jak to wszystko zawrzeć w obrazie fotograficznym?
+        </p>
+
+
+
+        <div class="wrapVideo">
+          <iframe frameborder="0" allowfullscreen
+            src="https://www.youtube.com/embed/RLhEyymHSTY">
+          </iframe>
+        </div>
+        
       </div>
 
         `;

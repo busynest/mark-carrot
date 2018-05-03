@@ -1,8 +1,4 @@
-If you'd like to jump directly to the end and see the finished project, head to [Mark Carrot](https://www.markcarrot.com) directory.
-
-# Mark Carrot Photography
-
-Dependencies:
+# [Mark Carrot Photography](https://www.markcarrot.com)
 
   Install [NodeJS](https://nodejs.org/en/)
 
@@ -14,18 +10,18 @@ Dependencies:
 
     $ npm install -g firebase-tools
 
-Project: 
 
-  Install Dependencies from package.json:
+
+  Install Dependencies from package.json
     $ npm install
   
-  Build Project from polymer.json:
+  Build Project from polymer.json
     $ polymer build
 
-  Serve Project:
+  Serve Project
     $ polymer serve
 
-  Analyze Project:
+  Analyze Project
     $ polymer Analyze
 
 # [NODEJS](https://nodejs.org/en/)
@@ -117,7 +113,7 @@ Project:
   We’re supporting a community where more than 27 million* people learn, share, and work together to build software.
 
   ...create a new repository on the command line
-  echo "# chessDefense" >> README.md
+  echo "# projectName" >> README.md
   git init
   git add README.md
   git commit -m "first commit"
